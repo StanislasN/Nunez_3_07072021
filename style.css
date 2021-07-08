@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 h2 h3 {
+  font-family: "Shrikhand", cursive;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/*HEADER*/
+.header__container {
+  display: flex;
+  flex-direction: column;
+}
+.header__container .logo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 20px 0;
+}
+.header__container .map-maker__container {
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 20px 0;
+}
+.header__container .map-maker__container p {
+  margin-left: 10px;
+  font-size: large;
+}
+
+/*# sourceMappingURL=style.css.map */

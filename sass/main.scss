@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+
+h1 h2 h3 {
+    font-family: "Shrikhand", cursive;
+  }
+  
+p {
+    font-family: "Roboto", sans-serif;
+  }
+
+/*HEADER*/
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+      .logo__container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: auto;
+          margin: 20px 0;
+      }
+  
+      .map-maker__container {
+          background: #eaeaea;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: auto;
+          padding: 20px 0;
+              p {
+                  margin-left: 10px;
+                  font-size:large;
+              }
+      }
+  }

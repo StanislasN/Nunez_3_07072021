@@ -125,4 +125,20 @@ p {
   font-size: 30px;
 }
 
+@media all and (min-width: 768px) {
+  .fonctionnement__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fonctionnement__container .fonctionnement__title {
+    width: 100%;
+    text-align: center;
+  }
+  .fonctionnement__container .fonctionnement__button--container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

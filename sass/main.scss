@@ -131,3 +131,20 @@ p {
                 }
         }        
 }
+
+@media all and (min-width:768px) {
+    .fonctionnement__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+            .fonctionnement__title {
+                width: 100%;
+                text-align: center;
+            }
+            .fonctionnement__button--container {
+                flex-direction: row;
+                justify-content: center;
+            }
+    }
+    
+}

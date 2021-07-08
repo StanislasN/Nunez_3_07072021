@@ -36,4 +36,36 @@ p {
   font-size: large;
 }
 
+/*PRESENTATION DU SITE*/
+.presentation__container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background: #f6f6f6;
+  align-items: center;
+  padding: 20px 20px 60px 20px;
+}
+.presentation__container .presentation__title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 40px;
+  font-family: "Roboto", sans-serif;
+}
+.presentation__container .presentation__text {
+  text-align: center;
+  font-size: 20px;
+}
+.presentation__container button {
+  height: 60px;
+  width: 250px;
+  color: white;
+  font-size: large;
+  border-radius: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  margin-top: 30px;
+  box-shadow: 0 3px 5px 3px #cccccc;
+}
+
 /*# sourceMappingURL=style.css.map */

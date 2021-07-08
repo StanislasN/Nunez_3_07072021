@@ -214,3 +214,44 @@ a {
     }
 }
 
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background: #353535 ;
+    color: white;
+    padding: 30px;
+        .footer__title {
+            font-family: "Shrikhand", cursive;
+            margin-bottom: 30px;
+        }
+        .footer__link--container {
+            
+            .footer__link {
+                display: flex;
+                color: white;
+                    .fas {
+                        width: 20px;
+                        margin-right: 10px;
+                    }
+            }
+
+            p {
+                margin-bottom: 10px;
+                color: white;
+            }
+        }
+}
+
+@media all and (min-width:768px) {
+    footer {
+        text-align: center;
+    }
+    .footer__title {
+        font-size: 30px;
+        margin-bottom: 10px!important;
+    }
+    .footer__link {
+        justify-content: center;
+    }
+}

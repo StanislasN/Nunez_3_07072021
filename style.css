@@ -66,6 +66,63 @@ p {
   border: none;
   margin-top: 30px;
   box-shadow: 0 3px 5px 3px #cccccc;
+  cursor: pointer;
+}
+
+/*FONCTIONNEMENT*/
+.fonctionnement__container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.fonctionnement__container .fonctionnement__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 50px 0 20px 20px;
+}
+.fonctionnement__container .fonctionnement__button--container {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  height: auto;
+}
+.fonctionnement__container .fonctionnement__button--container .puce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+  background: #9356DC;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  z-index: 2;
+}
+.fonctionnement__container .fonctionnement__button--container .fonctionnement__button--item {
+  height: 60px;
+  width: 80%;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  background: #f6f6f6;
+  border-radius: 25px;
+  padding: 20px;
+  margin-left: -25px;
+  z-index: 1;
+  box-shadow: 0 3px 5px 3px #cccccc;
+  cursor: pointer;
+}
+.fonctionnement__container .fonctionnement__button--container .fonctionnement__button--item:hover {
+  background: #f5edff;
+}
+.fonctionnement__container .fonctionnement__button--container .fonctionnement__button--item:hover .button__icon {
+  color: #9356DC;
+}
+.fonctionnement__container .fonctionnement__button--container .fonctionnement__button--item .button__icon {
+  margin: 0 20px;
+  color: #7e7e7e;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

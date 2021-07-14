@@ -190,11 +190,25 @@ a {
   margin: 25px auto;
   transition-property: transform;
   transition-duration: 400ms;
-  position: relative;
   z-index: 1;
 }
 .restaurants__container .restaurants__cards--container .card__container:hover {
   transform: scale(1.05);
+}
+.restaurants__container .restaurants__cards--container .card__container .new {
+  z-index: 2;
+  background: #99e2d0;
+  position: relative;
+  padding: 8px 15px;
+  top: -180px;
+  left: 380px;
+  right: auto;
+  color: #2f6e60;
+  font-weight: bold;
+  border-radius: 3px;
+  opacity: 0.95;
+  font-size: small;
+  border: none;
 }
 .restaurants__container .restaurants__cards--container .card__container .card__picture {
   width: 100%;
@@ -209,37 +223,30 @@ a {
   padding: 10px 30px 20px 20px;
   font-family: "roboto", sans-serif;
   background: white;
+  position: relative;
 }
 .restaurants__container .restaurants__cards--container .card__container figcaption .figcaption__text p {
   margin-top: 5px;
 }
 .restaurants__container .restaurants__cards--container .card__container figcaption .new__container {
+  position: relative;
+  top: -10px;
+}
+.restaurants__container .restaurants__cards--container .card__container figcaption .figcaption__heart {
+  /*font-size: 30px;
+  color: $primary-color;
+  border: none;
+  background: white;
+
+  &:active {
+      color: $primary-color;
+  }
+  &:visited {
+      color: $primary-color;
+  }*/
+}
+.restaurants__container .restaurants__cards--container .card__container figcaption .figcaption__heart .fas {
   position: absolute;
-  top: 20px;
-  right: 25px;
-  background: #99E2D0;
-  color: #016e01;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  z-index: 2;
-}
-.restaurants__container .restaurants__cards--container .card__container figcaption .fa-heart {
-  font-size: 20px;
-}
-.restaurants__container .restaurants__cards--container .card__container figcaption .full-heart {
-  position: absolute;
-  right: 30px;
-  color: #9356DC;
-  z-index: 4;
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-.restaurants__container .restaurants__cards--container .card__container figcaption .full-heart:hover {
-  opacity: 1;
-}
-.restaurants__container .restaurants__cards--container .card__container figcaption .empty-heart {
-  z-index: 3;
 }
 
 @media all and (min-width: 768px) {
@@ -304,4 +311,4 @@ footer .footer__link--container p {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */

@@ -136,8 +136,7 @@ a {
   cursor: pointer;
 }
 .fonctionnement__container .fonctionnement__button--container .fonctionnement__button--item:hover {
-  background: #f5edff;
-  box-shadow: 0 3px 5px 3px #acabab;
+  background: #894fcf;
 }
 .fonctionnement__container .fonctionnement__button--container .fonctionnement__button--item:hover .button__icon {
   color: #9356DC;
@@ -190,11 +189,25 @@ a {
   margin: 25px auto;
   transition-property: transform;
   transition-duration: 400ms;
-  position: relative;
   z-index: 1;
 }
 .restaurants__container .restaurants__cards--container .card__container:hover {
   transform: scale(1.05);
+}
+.restaurants__container .restaurants__cards--container .card__container .new {
+  z-index: 2;
+  background: #99e2d0;
+  position: relative;
+  padding: 8px 15px;
+  top: -180px;
+  left: 380px;
+  right: auto;
+  color: #2f6e60;
+  font-weight: bold;
+  border-radius: 3px;
+  opacity: 0.95;
+  font-size: small;
+  border: none;
 }
 .restaurants__container .restaurants__cards--container .card__container .card__picture {
   width: 100%;
@@ -213,33 +226,17 @@ a {
 .restaurants__container .restaurants__cards--container .card__container figcaption .figcaption__text p {
   margin-top: 5px;
 }
-.restaurants__container .restaurants__cards--container .card__container figcaption .new__container {
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  background: #99E2D0;
-  color: #016e01;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  z-index: 2;
-}
-.restaurants__container .restaurants__cards--container .card__container figcaption .fa-heart {
-  font-size: 20px;
-}
-.restaurants__container .restaurants__cards--container .card__container figcaption .full-heart {
-  position: absolute;
-  right: 30px;
+.restaurants__container .restaurants__cards--container .card__container figcaption .figcaption__heart {
+  font-size: 30px;
   color: #9356DC;
-  z-index: 4;
-  opacity: 0;
-  transition: opacity 1s ease;
+  border: none;
+  background: white;
 }
-.restaurants__container .restaurants__cards--container .card__container figcaption .full-heart:hover {
-  opacity: 1;
+.restaurants__container .restaurants__cards--container .card__container figcaption .figcaption__heart:active {
+  color: #9356DC;
 }
-.restaurants__container .restaurants__cards--container .card__container figcaption .empty-heart {
-  z-index: 3;
+.restaurants__container .restaurants__cards--container .card__container figcaption .figcaption__heart:visited {
+  color: #9356DC;
 }
 
 @media all and (min-width: 768px) {

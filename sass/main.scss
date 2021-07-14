@@ -142,6 +142,7 @@ a {
                     cursor: pointer;
                         &:hover {
                             background: #f5edff;
+                            box-shadow: 0 3px 5px 3px #acabab;
                                 .button__icon {
                                     color: $primary-color;
                                 }
@@ -196,25 +197,12 @@ a {
                     margin: 25px auto;
                     transition-property: transform;
                     transition-duration: 400ms;
+                    position: relative;
                     z-index: 1;
                         &:hover {
                             transform: scale(1.05);
                         }
-                        .new {
-                            z-index: 2;
-                            background: #99e2d0;
-                            position: relative ;
-                            padding: 8px 15px;
-                            top: -180px;
-                            left: 380px;
-                            right: auto;
-                            color: #2f6e60;
-                            font-weight: bold;
-                            border-radius: 3px;
-                            opacity: 0.95;
-                            font-size: small;
-                            border: none;
-                        }
+                        
                         .card__picture {
                             width: 100%;
                             height: 200px;
@@ -229,25 +217,43 @@ a {
                             padding: 10px 30px 20px 20px;
                             font-family: "roboto", sans-serif;
                             background: white;
+                            
                                 .figcaption__text {
                                     p {
                                         margin-top: 5px;
                                     }
                                 }
-                                .figcaption__heart {
-                                    font-size: 30px;
-                                    color: $primary-color;
-                                    border: none;
-                                    background: white;
-                                    
-                                    &:active {
-                                        color: $primary-color;
-                                    }
-                                    &:visited {
-                                        color: $primary-color;
-                                    }
+                                .new__container {
+                                    position: absolute;
+                                    top: 20px;
+                                    right: 25px;
+                                    background: $tertiary-color;
+                                    color: rgb(1, 110, 1);
+                                    padding: 10px 20px;
+                                    font-weight: bold;
+                                    border-radius: 5px;
+                                    z-index: 2;
                                 }
                                 
+                                .fa-heart {
+                                    font-size: 20px;
+                                }
+
+                                .full-heart {
+                                    position: absolute;
+                                    right: 30px;
+                                    color: $primary-color;
+                                    z-index: 4;
+                                    opacity: 0;
+                                    transition: opacity 1s ease;
+                                        &:hover {
+                                            opacity: 1;
+                                        }
+                                }
+                                
+                                .empty-heart {
+                                    z-index: 3;
+                                }
                         }
                 }
         }

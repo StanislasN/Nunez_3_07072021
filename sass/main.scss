@@ -31,6 +31,78 @@ a {
     }
 }
 
+body {
+    z-index: 7;
+    position: relative;
+}
+
+/*LOADER*/
+
+.loader__container {
+    position: absolute;
+    z-index: -9;
+    width: 100%;
+    height: 100%;
+    max-height: 100%; 
+    background: $grey-back;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: disappear 3s 1;
+    
+        
+        .spin-loader {
+            //z-index: 10;
+            width: 200px;
+            height: 200px;
+            border: 30px solid $primary-color;
+            border-top-color: $secondary-color;
+            border-bottom-color: $tertiary-color;
+            margin-top: 200px;
+            border-radius: 50%;
+            animation: loading 3s linear infinite;
+            
+        }
+}
+
+@keyframes disappear {
+    0%, 99% {
+        opacity: 1;
+        z-index: 9;
+    }
+    
+    100%{
+        opacity: 0;
+        z-index: -9;
+    }
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0deg) scale(1);
+        border-top-color: $tertiary-color;
+        border-bottom-color: $tertiary-color;
+    }
+    25%{
+        border-top-color: $secondary-color;
+        border-bottom-color: $secondary-color;
+    }
+    50%{
+        transform: rotate(360deg) scale(1.15);
+        border-top-color: $tertiary-color;
+        border-bottom-color: $tertiary-color;
+    }
+    75%{
+        border-top-color: $secondary-color;
+        border-bottom-color: $secondary-color;
+    }
+    100%{
+        transform: rotate(720deg) scale(1);
+        border-top-color: $tertiary-color;
+        border-bottom-color: $tertiary-color;
+    }
+}
+
 /*HEADER*/
 
 .header__container {
@@ -208,54 +280,54 @@ a {
                             height: 200px;
                             object-fit: cover;
                             border-radius: 25px 25px 0 0;
-                        }
-                        
-                        figcaption {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            padding: 10px 30px 20px 20px;
-                            font-family: "roboto", sans-serif;
-                            background: white;
-                            
-                                .figcaption__text {
-                                    p {
-                                        margin-top: 5px;
-                                    }
-                                }
-                                .new__container {
-                                    position: absolute;
-                                    top: 20px;
-                                    right: 25px;
-                                    background: $tertiary-color;
-                                    color: rgb(1, 110, 1);
-                                    padding: 10px 20px;
-                                    font-weight: bold;
-                                    border-radius: 5px;
-                                    z-index: 2;
-                                }
-                                
-                                .fa-heart {
-                                    font-size: 20px;
-                                }
-
-                                .full-heart {
-                                    position: absolute;
-                                    right: 30px;
-                                    color: $primary-color;
-                                    z-index: 4;
-                                    opacity: 0;
-                                    transition: opacity 1s ease;
-                                        &:hover {
-                                            opacity: 1;
-                                        }
-                                }
-                                
-                                .empty-heart {
-                                    z-index: 3;
-                                }
-                        }
+                        }        
                 }
+        }
+}
+
+figcaption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 20px 20px;
+    font-family: "roboto", sans-serif;
+    background: white;
+    
+        .figcaption__text {
+            p {
+                margin-top: 5px;
+            }
+        }
+        .new__container {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            background: $tertiary-color;
+            color: rgb(1, 110, 1);
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            z-index: 2;
+        }
+        
+        .fa-heart {
+            font-size: 20px;
+        }
+
+        .full-heart {
+            position: absolute;
+            right: 30px;
+            color: $primary-color;
+            z-index: 4;
+            opacity: 0;
+            transition: opacity 1s ease;
+                &:hover {
+                    opacity: 1;
+                }
+        }
+        
+        .empty-heart {
+            z-index: 3;
         }
 }
 

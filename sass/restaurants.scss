@@ -28,8 +28,8 @@ a {
         border-radius: 50px 50px 0 0;
     }
     
-    .main__container {
-        width: 90%;
+    main {
+        width: 70%;
         margin: auto;
     }
 }
@@ -63,6 +63,8 @@ a {
 main {
     display: flex;
     flex-direction: column;
+    
+    
 }
 /*IMAGE EN-TETE*/
 
@@ -71,6 +73,7 @@ main {
     height: auto;
     object-fit: cover;
     z-index: 1;
+    overflow-y: hidden;
         .restaurant__picture {
             height: auto;
             width: 100%;
@@ -113,11 +116,12 @@ main {
     display: flex;
     flex-direction: column;
     background: white;
-    width: 100%;
-    margin: auto;
     border-radius: 15px;
-    
+    padding: 5px 0 5px 10px;
     margin: 10px 0;
+    box-shadow: 0px 5px 3px $shadow;
+    animation: fadein 1s;
+    
         .article__item--title{
             margin: 5px 0 0 3px;
             font-weight: 900;
@@ -129,8 +133,21 @@ main {
             font-size: small;
                 .price {
                     font-weight: 900;
+                    margin-right: 20px;
                 }
         }
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+        transform: translate(0, -10px);
+        
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0px);
+    }
 }
 
 .button__container {

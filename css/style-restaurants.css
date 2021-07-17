@@ -120,7 +120,6 @@ main {
   padding: 5px 0 5px 10px;
   margin: 10px 0;
   box-shadow: 0px 5px 3px #e7e7e7;
-  animation: fadein 1s;
 }
 .article__items .article__item--title {
   margin: 5px 0 0 3px;
@@ -137,14 +136,26 @@ main {
   margin-right: 20px;
 }
 
+.article-1 {
+  animation: fadein 1s 1s;
+}
+
+.article-2 {
+  animation: fadein 1s 2s;
+}
+
+.article-3 {
+  animation: fadein 1s 3s;
+}
+
 @keyframes fadein {
   from {
+    transform: translateX(-50px);
     opacity: 0;
-    transform: translate(0, -10px);
   }
   to {
+    transform: translateX(0px);
     opacity: 1;
-    transform: translate(0, 0px);
   }
 }
 .button__container {

@@ -107,6 +107,7 @@ main {
   flex-direction: column;
   width: 90%;
   margin: auto;
+  opacity: 0;
 }
 .article__container .article__title {
   margin-top: 35px;
@@ -138,14 +139,17 @@ main {
 
 .article-1 {
   animation: fadein 1s 1s;
+  animation-fill-mode: forwards;
 }
 
 .article-2 {
   animation: fadein 1s 2s;
+  animation-fill-mode: forwards;
 }
 
 .article-3 {
   animation: fadein 1s 3s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadein {

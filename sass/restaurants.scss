@@ -114,6 +114,7 @@ main {
     flex-direction: column;
     width: 90%;
     margin: auto;
+    opacity: 0;
         .article__title {
             margin-top: 35px;
         }
@@ -146,27 +147,26 @@ main {
 }
 
 .article-1 {
-    //animation-delay: 1s;
     animation: fadein 1s 1s;
-    
+    animation-fill-mode: forwards;
 }
 
 .article-2 {
-    
     animation: fadein 1s 2s;
-    //animation-delay: 2s;
+    animation-fill-mode: forwards;
+    
 }
 
 .article-3 {
-    //animation-delay: 3s;
     animation: fadein 1s 3s;
-    
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadein {
     from {
         transform: translateX(-50px);   
         opacity:0;
+        
     }
     to {
         transform: translateX(0px);

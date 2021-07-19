@@ -113,66 +113,33 @@ main {
   margin-top: 35px;
 }
 
-.article-items__container {
-  display: flex;
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0px 5px 3px #e7e7e7;
-  position: relative;
-}
-.article-items__container .check__container {
-  width: 0%;
-  height: 100%;
-  background: #99E2D0;
-  position: absolute;
-  right: 0;
-  transition: 400ms;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.article-items__container .check__container .check {
-  color: #99E2D0;
-}
-.article-items__container .check__container .check .fas {
-  font-size: 20px;
-  color: #99E2D0;
-  border: 1px solid white;
-  border-radius: 50%;
-  padding: 5px;
-  background: white;
-}
-.article-items__container .article__items {
+.article__items {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  background: #e93636;
+  border-radius: 15px;
   padding: 5px 0 5px 10px;
   margin: 10px 0;
-  transition: 400ms;
+  box-shadow: 0px 5px 3px #e7e7e7;
 }
-.article-items__container .article__items .article__item--title {
+.article__items:hover {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.article__items .article__item--title {
   margin: 5px 0 0 3px;
   font-weight: 900;
 }
-.article-items__container .article__items .article__item--feat {
+.article__items .article__item--feat {
   display: flex;
   justify-content: space-between;
   margin: 3px 5px 5px 3px;
   font-size: small;
 }
-.article-items__container .article__items .article__item--feat .price {
+.article__items .article__item--feat .price {
   font-weight: 900;
   margin-right: 20px;
-  min-width: 10%;
-}
-.article-items__container:hover .article__items {
-  width: 80%;
-}
-.article-items__container:hover .check__container {
-  width: 20%;
-}
-.article-items__container:hover .check {
-  animation: loop 400ms 1;
 }
 
 .article-1 {
@@ -200,21 +167,11 @@ main {
     opacity: 1;
   }
 }
-@keyframes loop {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(720deg);
-  }
-}
-.text-hidden {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+/*DIV ANIMEE POUR LA CONFIRMATION*/
+.anim__container {
+  width: 50px;
+  height: auto;
+  background: #353535;
 }
 
 /*BOUTON COMMANDER*/
@@ -281,4 +238,4 @@ footer .footer__link--container p {
   }
 }
 
-/*# sourceMappingURL=style-restaurants.css.map */
+/*# sourceMappingURL=style-retaurants.css.map */

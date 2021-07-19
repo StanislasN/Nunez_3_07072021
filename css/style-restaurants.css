@@ -11,6 +11,12 @@ h1 h2 h3 {
   font-family: "Shrikhand", cursive;
 }
 
+h4 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
 p {
   font-family: "Roboto", sans-serif;
 }

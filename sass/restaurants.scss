@@ -11,7 +11,13 @@ body {
 h1 h2 h3 {
     font-family: "Shrikhand", cursive;
   }
-  
+
+h4 {
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
 p {
     font-family: "Roboto", sans-serif;
   }
@@ -270,7 +276,6 @@ footer {
             margin-bottom: 30px;
         }
         .footer__link--container {
-            
             .footer__link {
                 display: flex;
                 color: white;
@@ -279,7 +284,6 @@ footer {
                         margin-right: 10px;
                     }
             }
-
             p {
                 margin-bottom: 10px;
                 color: white;

@@ -92,7 +92,7 @@ main {
 /*IMAGE EN-TETE*/
 .picture__container {
   width: 100%;
-  height: auto;
+  height: 250px;
   object-fit: cover;
   z-index: 1;
   overflow-y: hidden;

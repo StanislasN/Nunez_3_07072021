@@ -211,7 +211,7 @@ main {
 .article-items__container .article__items .article__item--feat .price {
   font-weight: 900;
   min-width: 20%;
-  margin-right: 10px;
+  margin-right: 20px;
   display: flex;
   justify-content: right;
   font-size: 14px;

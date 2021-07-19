@@ -16,6 +16,21 @@ a {
   color: black;
 }
 
+.principal {
+  animation: appear 5s;
+  height: 100%;
+}
+
+@keyframes appear {
+  0%, 50% {
+    opacity: 0;
+    z-index: -9;
+  }
+  100% {
+    opacity: 1;
+    z-index: 9;
+  }
+}
 @media all and (min-width: 768px) {
   .map-maker__container {
     width: 90%;
@@ -58,7 +73,7 @@ body {
 }
 
 @keyframes disappear {
-  0%, 99% {
+  0%, 50% {
     opacity: 1;
     z-index: 9;
   }
@@ -112,9 +127,18 @@ body {
   height: auto;
   padding: 20px 0;
 }
-.header__container .map-maker__container p {
-  margin-left: 10px;
+.header__container .map-maker__container .fa-map-marker-alt {
+  margin-left: 30px;
+}
+.header__container .map-maker__container .search {
+  margin-left: 20px;
   font-size: large;
+  background: #eaeaea;
+  border: none;
+}
+.header__container .map-maker__container .search::placeholder {
+  color: black;
+  opacity: 0.8;
 }
 
 /*PRESENTATION DU SITE*/

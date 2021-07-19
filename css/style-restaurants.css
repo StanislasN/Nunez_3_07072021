@@ -169,8 +169,11 @@ main {
 }
 .article-items__container .article__items .article__item--feat .price {
   font-weight: 900;
-  margin-right: 20px;
-  min-width: 10%;
+  min-width: 20%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: right;
+  font-size: 14px;
 }
 .article-items__container:hover .article__items {
   width: 80%;

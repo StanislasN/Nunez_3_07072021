@@ -174,8 +174,11 @@ main {
                     
                         .price {
                             font-weight: 900;
-                            margin-right: 20px;
-                            min-width: 10%;
+                            min-width: 20%;
+                            margin-right: 10px;
+                            display: flex;
+                            justify-content: right;
+                            font-size: 14px;
                         }
                 }
         }

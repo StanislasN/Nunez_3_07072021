@@ -51,6 +51,12 @@ a {
             align-items: center;
             height: auto;
             margin: 20px 0;
+                .fa-arrow-left {
+                    font-size: 20px;
+                    position: fixed;
+                    left: 20px;
+                    top: 27px;
+                }
         }
   
         .map-maker__container {
@@ -66,12 +72,17 @@ a {
                 }
         }
 }
+@media all and (min-width:768px) {
+    .fa-arrow-left {
+        left: 15%!important;
+    }
+}
+
 main {
     display: flex;
-    flex-direction: column;
-    
-    
+    flex-direction: column;   
 }
+
 /*IMAGE EN-TETE*/
 
 .picture__container {
@@ -101,7 +112,7 @@ main {
     flex-direction: column;
     z-index: 2;
     padding-top: 45px;
-    margin-top: -40px;
+    margin-top: -50px;
     border-radius: 45px 45px 0 0;
     background: $grey-back;
         .menu__title--container {
@@ -112,6 +123,25 @@ main {
             font-size: 20px;
             width: 86%;
             margin: auto;
+                .fa-heart {
+                    font-size: 20px;
+                }
+        
+                .full-heart {
+                    position: absolute;
+                    right: 30px;
+                    color: $primary-color;
+                    z-index: 4;
+                    opacity: 0;
+                    transition: opacity 1s ease;
+                        &:hover {
+                            opacity: 1;
+                        }
+                }
+                
+                .empty-heart {
+                    z-index: 3;
+                }
         }
 }
 

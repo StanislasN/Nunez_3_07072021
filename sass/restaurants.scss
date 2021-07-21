@@ -174,7 +174,8 @@ main {
     border-radius: 15px;
     box-shadow: 0px 5px 3px $shadow;
     position: relative;
-    margin: 10px 0;    
+    margin: 10px 0;  
+    cursor: pointer;  
         .check__container {
             width: 0%;
             height: 100%;

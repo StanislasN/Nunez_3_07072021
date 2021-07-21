@@ -18,7 +18,6 @@ a {
 
 .principal {
   animation: appear 5s;
-  height: 100%;
 }
 
 @keyframes appear {
@@ -54,7 +53,6 @@ body {
   z-index: -9;
   width: 100%;
   height: 100%;
-  max-height: 100%;
   background: #f6f6f6;
   display: flex;
   justify-content: center;
@@ -62,8 +60,8 @@ body {
   animation: disappear 3s 1;
 }
 .loader__container .spin-loader {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: 30px solid #9356DC;
   border-top-color: #FF79DA;
   border-bottom-color: #99E2D0;
@@ -231,7 +229,8 @@ body {
   color: #9356DC;
 }
 .fonctionnement__container .fonctionnement__button--container .fonctionnement__button--item .button__icon {
-  margin: 0 20px;
+  margin: 0 10px;
+  padding: 0 20px;
   color: #7e7e7e;
   font-size: 30px;
 }
